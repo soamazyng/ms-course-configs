@@ -1,26 +1,2 @@
-spring:
-  application:
-    name: hr-worker
-  datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password:
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
-  jpa:server:
-  port: ${PORT:0}
-    defer-datasource-initialization: true
-
-server:
-  port: ${PORT:0}
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+test:
+  config=My config Default
